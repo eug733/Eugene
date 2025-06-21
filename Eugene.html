@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top 5 Gaming Phones for Gamers in 2024</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts for font style options -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #1a1a2e;
+            --secondary-bg: #16213e;
+            --accent: #ff6c22;
+            --accent2: #ffd700;
+            --text-main: #f5f6fa;
+            --text-secondary: #ffd6d6;
+            --card-bg: #23234d;
+            --badge-bg: #ff6c22;
+            --badge-text: #fff;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #23234d 0%, #1a1a2e 100%);
+            color: var(--text-main);
+            font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: linear-gradient(90deg, #ff6c22 0%, #ffd700 100%);
+            color: #23234d;
+            padding: 3em 0 2em 0;
+            text-align: center;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0 8px 32px #0004;
+        }
+        .hero h1 {
+            font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
+            font-size: 2.8em;
+            margin-bottom: 0.3em;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 100vw;
+            width: 100vw;
+            margin: 0;
+            padding: 2.5em 0;
+            background: var(--card-bg);
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .section-title {
+            font-size: 2em;
+            color: var(--accent2);
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 12px #7b1c1c88;
+        }
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            border: none;
+            margin: 2em 0 2em 0;
+            border-radius: 2px;
+        }
+        .phone {
+            width: 100vw;
+            border-radius: 0;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin-bottom: 3em;
+            background: #23234d;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #0006;
+            padding: 2em 1.5em;
+            transition: transform 0.2s;
+        }
+        .phone:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 8px 32px #ff6c2244, 0 2px 24px #000a;
+        }
+        .phone img {
+            width: 340px; /* was 280px */
+            height: 520px; /* was 480px */
+            object-fit: cover;
+            border-radius: 14px;
+            background: #1a1a2e;
+            box-shadow: 0 2px 16px #ffd70033;
+            border: 3px solid var(--accent);
+        }
+        .phone-details {
+            flex: 1;
+            min-width: 250px;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 0.95em;
+            font-weight: bold;
+            padding: 0.3em 1em;
+            border-radius: 12px;
+            margin-bottom: 0.7em;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px #ff6c2233;
+        }
+        .badge i {
+            margin-right: 0.5em;
+        }
+        .specs li::before {
+            content: "\f11b";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--accent2);
+            margin-right: 0.5em;
+            font-size: 1em;
+        }
+        .dev-features li::before {
+            content: "\f233";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--accent);
+            margin-right: 0.5em;
+            font-size: 1em;
+        }
+        .pros ul li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #00ff99;
+            margin-right: 0.5em;
+        }
+        .cons ul li::before {
+            content: "\f057";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #ff4d4d;
+            margin-right: 0.5em;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .specs, .dev-features {
+            margin: 0.7em 0 0.7em 0;
+            padding-left: 1.2em;
+            font-family: 'Poppins', Arial, sans-serif;
+            font-size: 1.05em;
+        }
+        .specs li, .dev-features li {
+            margin-bottom: 0.3em;
+        }
+        .pros-cons {
+            display: flex;
+            gap: 2em;
+            margin-top: 1em;
+        }
+        .pros, .cons {
+            flex: 1;
+            background: #1a1a2e;
+            border-radius: 10px;
+            padding: 1em;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .pros h5, .cons h5 {
+            color: var(--accent2);
+            margin-bottom: 0.5em;
+            font-family: 'Orbitron', Arial, sans-serif;
+        }
+        .pros ul li {
+            color: #ffe6a3;
+        }
+        .cons ul li {
+            color: #ffb3b3;
+        }
+        .extra-details {
+            margin-top: 1em;
+            color: var(--text-secondary);
+            font-size: 1em;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        footer {
+            margin-top: 3em;
+            text-align: center;
+            color: var(--text-secondary);
+            background: linear-gradient(90deg, #7b1c1c 80%, #3a0a0aee 100%);
+            padding: 2em 0 1em 0;
+            border-radius: 0 0 22px 22px;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        ::selection {
+            background: var(--accent2);
+            color: var(--primary-bg);
+        }
+        a {
+            color: var(--accent);
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        a:hover {
+            color: var(--accent2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav style="width:100vw;background:#23234d;box-shadow:0 2px 12px #0008;position:sticky;top:0;z-index:100;display:flex;justify-content:center;gap:2em;padding:1em 0;">
+        <a href="#top-phones"><i class="fa-solid fa-gamepad"></i> Top Phones</a>
+        <a href="#what-makes"><i class="fa-solid fa-question"></i> What Makes a Great Gaming Phone?</a>
+        <a href="#honorable"><i class="fa-solid fa-medal"></i> Honorable Mentions</a>
+        <a href="#how-we-chose"><i class="fa-solid fa-list-check"></i> How We Chose</a>
+        <a href="gaming-accessories.html" target="_blank"><i class="fa-solid fa-headset"></i> Gaming Accessories</a>
+    </nav>
+
+    <div class="container" id="top-phones">
+        <h1><i class="fa-solid fa-gamepad"></i> Top 5 Gaming Phones for Gamers in 2024</h1>
+        <p>
+            <i class="fa-solid fa-fire"></i>
+            Welcome to the ultimate guide for gaming phones in 2024! Whether you’re a competitive mobile gamer, a streamer, or just want the smoothest experience in <b>Genshin Impact</b>, <b>PUBG Mobile</b>, or <b>Call of Duty: Mobile</b>, these phones are built for pure gaming performance.
+        </p>
+        <p>
+            <i class="fa-solid fa-star"></i>
+            All phones listed here are designed for gamers first: they have high refresh rate screens, advanced cooling, gaming triggers, and massive batteries. We also highlight their unique features, pros and cons, and why each one stands out for gaming in 2024.
+        </p>
+
+        <!-- 1. ASUS ROG Phone 8 Pro -->
+        <div class="phone">
+            <img src="C:\Users\eugen\Downloads\asus-rog-phone-8-2.jpg" alt="ASUS ROG Phone 8 Pro">
+            <div class="phone-details">
+                <h2><span class="badge"><i class="fa-solid fa-crown"></i> 1. ASUS ROG Phone 8 Pro</span></h2>
+                <ul class="specs">
+                    <li><b>Display:</b> 6.78" AMOLED, 165Hz, HDR10+, 2500 nits peak brightness</li>
+                    <li><b>CPU:</b> Snapdragon 8 Gen 3</li>
+                    <li><b>RAM:</b> 16GB / 24GB LPDDR5X</li>
+                    <li><b>Storage:</b> 512GB / 1TB UFS 4.0</li>
+                    <li><b>Battery:</b> 5500mAh, 65W fast charging, bypass charging</li>
+                    <li><b>OS:</b> Android 14 (ROG UI, unlockable bootloader)</li>
+                    <li><b>Audio:</b> Dual front-facing speakers, 3.5mm jack, Dirac tuning</li>
+                </ul>
+                <h4><i class="fa-solid fa-bolt"></i> Gaming Features</h4>
+                <ul class="dev-features">
+                    <li>Performance mode for max FPS in all games</li>
+                    <li>Advanced cooling for long gaming sessions</li>
+                    <li>Customizable AirTriggers for FPS and racing games</li>
+                    <li>RGB lighting and Aura Sync</li>
+                    <li>Game Genie overlay for real-time stats and macros</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h5><i class="fa-solid fa-thumbs-up"></i> Pros</h5>
+                        <ul>
+                            <li>Unmatched gaming performance and thermal management</li>
+                            <li>Massive RAM and storage options</li>
+                            <li>Best for Android game/app testing and streaming</li>
+                            <li>Excellent battery and charging flexibility</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h5><i class="fa-solid fa-thumbs-down"></i> Cons</h5>
+                        <ul>
+                            <li>Bulky and heavy (gaming design)</li>
+                            <li>Expensive, especially higher configs</li>
+                            <li>Camera is good, but not flagship level</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="extra-details">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <b>Why for gamers?</b> The ROG Phone 8 Pro is the king of Android gaming. Its AirTriggers, cooling, and display are perfect for competitive play, and the battery lasts all day even with max settings.
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. RedMagic 9 Pro -->
+        <div class="phone">
+            <img src="C:\Users\eugen\Downloads\zte-nubia-red-magic-9-pro-1.jpg" alt="RedMagic 9 Pro">
+            <div class="phone-details">
+                <h2><span class="badge" style="background:#ffd700;color:#23234d;"><i class="fa-solid fa-coins"></i> 2. RedMagic 9 Pro</span></h2>
+                <ul class="specs">
+                    <li><b>Display:</b> 6.8" AMOLED, 120Hz, 1600 nits peak</li>
+                    <li><b>CPU:</b> Snapdragon 8 Gen 3</li>
+                    <li><b>RAM:</b> 12GB / 16GB</li>
+                    <li><b>Storage:</b> 256GB / 512GB</li>
+                    <li><b>Battery:</b> 6500mAh, 80W fast charging</li>
+                    <li><b>OS:</b> RedMagic OS 9 (Android 14)</li>
+                    <li><b>Audio:</b> Stereo speakers, 3.5mm jack</li>
+                </ul>
+                <h4><i class="fa-solid fa-bolt"></i> Gaming Features</h4>
+                <ul class="dev-features">
+                    <li>Built-in cooling fan for sustained performance</li>
+                    <li>Game Space for FPS monitoring, performance tuning, and macros</li>
+                    <li>Physical shoulder triggers for shooters and racing</li>
+                    <li>RGB lighting and customizable gaming modes</li>
+                    <li>Wide color gamut for immersive visuals</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h5><i class="fa-solid fa-thumbs-up"></i> Pros</h5>
+                        <ul>
+                            <li>Best battery life in a gaming phone</li>
+                            <li>Affordable for the specs</li>
+                            <li>Physical triggers and fan are great for gaming</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h5><i class="fa-solid fa-thumbs-down"></i> Cons</h5>
+                        <ul>
+                            <li>Software not as polished as Samsung/Google</li>
+                            <li>Camera is average</li>
+                            <li>Updates can be slow</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="extra-details">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <b>Why for gamers?</b> The RedMagic 9 Pro is perfect for marathon gaming. The built-in fan and triggers give you a real edge in shooters and racing games.
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Samsung Galaxy S24 Ultra -->
+        <div class="phone">
+            <img src="C:\Users\eugen\Downloads\samsung-galaxy-s24-ultra-2235-ggmx-1024x1024-197559.jpg" alt="Samsung Galaxy S24 Ultra">
+            <div class="phone-details">
+                <h2><span class="badge" style="background:#00e0ff;color:#23234d;"><i class="fa-solid fa-gem"></i> 3. Samsung Galaxy S24 Ultra</span></h2>
+                <ul class="specs">
+                    <li><b>Display:</b> 6.8" QHD+ Dynamic AMOLED 2X, 120Hz, Vision Booster</li>
+                    <li><b>CPU:</b> Snapdragon 8 Gen 3 / Exynos 2400</li>
+                    <li><b>RAM:</b> 12GB</li>
+                    <li><b>Storage:</b> 256GB / 512GB / 1TB</li>
+                    <li><b>Battery:</b> 5000mAh, 45W fast charging</li>
+                    <li><b>OS:</b> Android 14 (One UI 6.1)</li>
+                    <li><b>Audio:</b> Stereo speakers, Dolby Atmos</li>
+                </ul>
+                <h4><i class="fa-solid fa-bolt"></i> Gaming Features</h4>
+                <ul class="dev-features">
+                    <li>Large, bright display for immersive gaming</li>
+                    <li>Game Booster for optimizing performance and battery</li>
+                    <li>Good thermal management for long sessions</li>
+                    <li>Great for cloud gaming and streaming</li>
+                    <li>Excellent stylus support for strategy and creative games</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h5><i class="fa-solid fa-thumbs-up"></i> Pros</h5>
+                        <ul>
+                            <li>Top-tier hardware and display</li>
+                            <li>Long software support (5+ years)</li>
+                            <li>Great for multitasking and remote desktop apps</li>
+                            <li>Excellent stylus support</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h5><i class="fa-solid fa-thumbs-down"></i> Cons</h5>
+                        <ul>
+                            <li>Expensive</li>
+                            <li>Large and heavy</li>
+                            <li>Not a "pure" gaming phone, but great for gamers who want a flagship</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="extra-details">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <b>Why for gamers?</b> The S24 Ultra is a flagship that can handle any game at max settings, with a huge screen and long battery life.
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Lenovo Legion Phone Duel 2 -->
+        <div class="phone">
+            <img src="C:\Users\eugen\Downloads\lenovo-legion-02.jpg" alt="Lenovo Legion Phone Duel 2">
+            <div class="phone-details">
+                <h2><span class="badge" style="background:#ff3c6f;"><i class="fa-solid fa-video"></i> 4. Lenovo Legion Phone Duel 2</span></h2>
+                <ul class="specs">
+                    <li><b>Display:</b> 6.92" AMOLED, 144Hz, HDR10+</li>
+                    <li><b>CPU:</b> Snapdragon 888</li>
+                    <li><b>RAM:</b> 12GB / 16GB / 18GB</li>
+                    <li><b>Storage:</b> 256GB / 512GB</li>
+                    <li><b>Battery:</b> 5500mAh, 90W fast charging, dual batteries</li>
+                    <li><b>OS:</b> Legion OS (Android 12)</li>
+                    <li><b>Audio:</b> Dual front-facing speakers, quad-mic array</li>
+                </ul>
+                <h4><i class="fa-solid fa-bolt"></i> Gaming Features</h4>
+                <ul class="dev-features">
+                    <li>Dual USB-C for charging and accessories (play and charge)</li>
+                    <li>Pop-up side camera for game streaming</li>
+                    <li>Landscape-first design for comfort</li>
+                    <li>RGB lighting and customizable macros</li>
+                    <li>Great for multiplayer and streaming setups</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h5><i class="fa-solid fa-thumbs-up"></i> Pros</h5>
+                        <ul>
+                            <li>Unique gaming hardware features</li>
+                            <li>Excellent for streaming and content creation</li>
+                            <li>Very fast charging and dual battery design</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h5><i class="fa-solid fa-thumbs-down"></i> Cons</h5>
+                        <ul>
+                            <li>Heavy and thick</li>
+                            <li>Software updates are slow</li>
+                            <li>Older chip than others on this list</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="extra-details">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <b>Why for gamers?</b> The Legion Duel 2 is built for landscape gaming and streaming, with unique hardware for serious mobile eSports.
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. iPhone 15 Pro Max -->
+        <div class="phone">
+            <img src="C:\Users\eugen\Downloads\Apple-iPhone-15-Pro.jpg" alt="iPhone 15 Pro Max">
+            <div class="phone-details">
+                <h2><span class="badge" style="background:#007aff;"><i class="fa-brands fa-apple"></i> 5. Apple iPhone 15 Pro Max</span></h2>
+                <ul class="specs">
+                    <li><b>Display:</b> 6.7" Super Retina XDR OLED, 120Hz, ProMotion</li>
+                    <li><b>CPU:</b> Apple A17 Pro</li>
+                    <li><b>RAM:</b> 8GB</li>
+                    <li><b>Storage:</b> 256GB / 512GB / 1TB</li>
+                    <li><b>Battery:</b> 4422mAh, fast charging, MagSafe</li>
+                    <li><b>OS:</b> iOS 17</li>
+                    <li><b>Audio:</b> Stereo speakers, spatial audio</li>
+                </ul>
+                <h4><i class="fa-solid fa-bolt"></i> Gaming Features</h4>
+                <ul class="dev-features">
+                    <li>Game Mode for high performance and low latency</li>
+                    <li>Best GPU for iOS gaming and Apple Arcade</li>
+                    <li>Great for AR games and console-quality titles</li>
+                    <li>Screen recording and broadcast tools for sharing gameplay</li>
+                    <li>Long software support for years of gaming</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h5><i class="fa-solid fa-thumbs-up"></i> Pros</h5>
+                        <ul>
+                            <li>Fastest chip in a phone, best GPU for iOS</li>
+                            <li>Long software support and security</li>
+                            <li>Best-in-class camera and display for AR/VR games</li>
+                            <li>Great for testing Apple Arcade and App Store games</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h5><i class="fa-solid fa-thumbs-down"></i> Cons</h5>
+                        <ul>
+                            <li>Expensive</li>
+                            <li>Not ideal for Android gamers</li>
+                            <li>Less customizable than Android</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="extra-details">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <b>Why for gamers?</b> If you want the best iOS gaming experience, the iPhone 15 Pro Max is unbeatable for performance, graphics, and exclusive games.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="what-makes">
+        <h2><i class="fa-solid fa-question"></i> What Makes a Great Gaming Phone?</h2>
+        <ul>
+            <li><i class="fa-solid fa-microchip"></i> <b>Performance:</b> Fast CPU, lots of RAM, and advanced cooling for long gaming sessions.</li>
+            <li><i class="fa-solid fa-mobile-screen"></i> <b>Display:</b> High refresh rate, bright, and color-accurate for smooth and immersive gaming.</li>
+            <li><i class="fa-solid fa-battery-full"></i> <b>Battery:</b> All-day battery and fast charging for marathon sessions.</li>
+            <li><i class="fa-solid fa-gamepad"></i> <b>Gaming Features:</b> Shoulder triggers, cooling fans, RGB lighting, and game modes.</li>
+            <li><i class="fa-solid fa-volume-high"></i> <b>Audio:</b> Loud stereo speakers and headphone jack for immersive sound.</li>
+            <li><i class="fa-solid fa-gears"></i> <b>Software:</b> Game overlays, performance tuning, and long-term updates.</li>
+        </ul>
+        <p>
+            <b>Tip:</b> <i class="fa-solid fa-lightbulb"></i> For competitive gaming, prioritize refresh rate and touch response. For streaming, look for good microphones and screen recording. For casual gaming, battery and comfort matter most.
+        </p>
+    </div>
+
+    <div class="container" id="honorable">
+        <h3><i class="fa-solid fa-medal"></i> Honorable Mentions</h3>
+        <ul>
+            <li><i class="fa-solid fa-star"></i> <b>OnePlus 12:</b> Great performance and value, but not as gaming-focused as others here.</li>
+            <li><i class="fa-solid fa-star"></i> <b>Xiaomi Black Shark 5 Pro:</b> Excellent triggers and cooling, but software support can be spotty.</li>
+            <li><i class="fa-solid fa-star"></i> <b>POCO F6 Pro:</b> Budget-friendly, good for emulator devs and indie game testing.</li>
+        </ul>
+    </div>
+
+    <div class="container" id="how-we-chose">
+        <h3><i class="fa-solid fa-list-check"></i> How We Chose</h3>
+        <p>
+            <i class="fa-solid fa-users"></i>
+            We considered real-world gaming needs: FPS, thermal management, battery, gaming features, and device popularity for testing. All phones here are excellent for gaming, but your best choice depends on your favorite genres and play style.
+        </p>
+    </div>
+    <footer>
+        <p><i class="fa-solid fa-heart"></i> &copy; 2024 Eugene Gaming Reviews. All rights reserved.</p>
+        <p><i class="fa-solid fa-image"></i> Images & trademarks are property of their respective owners.</p>
+    </footer>
+</body>
+</html>
